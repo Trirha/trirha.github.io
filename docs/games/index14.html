@@ -14,42 +14,27 @@
             height: 100vh; /* Full height of the viewport */
             border: none;
             display: block;
-        }
-        #fullscreenButton {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            z-index: 1000; /* Make sure button is on top */
-        }
     </style>
-     <script src="../auth.js" defer></script>
 </head>
 <body>
 
-<iframe id="myIframe" src="https://48.theartieschaffer.com/d"></iframe>
-<button id="fullscreenButton">Go Fullscreen</button>
+<iframe id="myIframe" src="https://48.theartieschaffer.com/d" allowfullscreen></iframe>
 
 <script>
-    const iframe = document.getElementById('myIframe');
-    const fullscreenButton = document.getElementById('fullscreenButton');
-
-    fullscreenButton.addEventListener('click', function() {
-        if (iframe.requestFullscreen) {
-            iframe.requestFullscreen();
-        } else if (iframe.mozRequestFullScreen) { // Firefox
-            iframe.mozRequestFullScreen();
-        } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
-            iframe.webkitRequestFullscreen();
-        } else if (iframe.msRequestFullscreen) { // IE/Edge
-            iframe.msRequestFullscreen();
+     // This script can be added inside the iframe's content
+        function requestFullscreen() {
+            const iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) { // Safari
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
         }
-    });
+
+        // Call this function when you want to go fullscreen, e.g. on a button click
+        document.getElementById('fullscreenButton').addEventListener('click', requestFullscreen);
 
     iframe.onload = function() {
         const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
