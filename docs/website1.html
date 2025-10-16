@@ -19,6 +19,11 @@
             justify-content: space-around;
             width: 80%; /* Adjust width as needed */
         }
+        .button-wrapper {
+            text-align: center;
+            flex: 1 1 150px; /* Flex-grow, flex-shrink, flex-basis */
+            margin: 10px; /* Space between buttons */
+        }
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -27,29 +32,120 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin: 10px; /* Space between buttons */
-            flex: 1 1 150px; /* Flex-grow, flex-shrink, flex-basis */
+            display: block;
+            width: 100%; /* Make button full width */
+        }
+        img {
+            width: 100%;
+            height: auto; /* Adjusts height based on width */
+            border-radius: 5px; /* Optional: Round image corners */
         }
     </style>
 </head>
 <body>
 
     <div class="button-container">
-        <button onclick="window.location.href='https://trirha.github.io/games/index.html'">1st one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index2.html'">2nd one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index3.html'">3rd one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index4.html'">4th one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index5.html'">5th one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index6.html'">6th one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index7.html'">7th one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index8.html'">8th one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index9.html'">9th one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index10.html'">10th one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index11.html'">11th one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index12.html'">12th one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index13.html'">13th one</button>
-        <button onclick="window.location.href='https://trirha.github.io/games/index14.html'">14th one</button>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.ZjIeizSOA-pAl8PzbgZGoAHaLH%3Fpid%3DApi&f=1&ipt=300bbba0b8b359c40d7d5c25c53be9b9e146cc6f74cde7cb30f7d1a472e958e7&ipo=images" alt="First Game" />
+                <button>1st one</button>
+            </a>
+            <caption>IDK but currently works</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index2.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.JJAtjan5E5EVZsjqJz4d0wHaE8%3Fcb%3D12%26pid%3DApi&f=1&ipt=e838a695611f61741b993491781b75b42a2e94112dc458588a0a6ca2b388e21e&ipo=images" alt="Second Game" />
+                <button>2nd one</button>
+            </a>
+            <caption>ReakPeanut</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index3.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.0wVFLBqKHq4z7Gi4xiYv3QHaHa%3Fcb%3D12%26pid%3DApi%26ucfimg%3D1&f=1&ipt=651a44d90aebed7b83dca2f1a42172618df6038f70de34811738c8b37e47c734&ipo=images" alt="Third Game" />
+                <button>3rd one</button>
+            </a>
+            <caption>Broken (Eggy Car Works On It)</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index4.html">
+                <img src="https://www.gstatic.com/classroom/logo_square_rounded.svg" alt="Fourth Game" />
+                <button>4th one</button>
+            </a>
+            <caption>Google Classroom 6x</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index5.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.0wVFLBqKHq4z7Gi4xiYv3QHaHa%3Fcb%3D12%26pid%3DApi%26ucfimg%3D1&f=1&ipt=651a44d90aebed7b83dca2f1a42172618df6038f70de34811738c8b37e47c734&ipo=images" alt="Fifth Game" />
+                <button>5th one</button>
+            </a>
+            <caption>Fifth Game</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index6.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.0wVFLBqKHq4z7Gi4xiYv3QHaHa%3Fcb%3D12%26pid%3DApi%26ucfimg%3D1&f=1&ipt=651a44d90aebed7b83dca2f1a42172618df6038f70de34811738c8b37e47c734&ipo=images" alt="Sixth Game" />
+                <button>6th one</button>
+            </a>
+            <caption>Sixth Game</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index7.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.0wVFLBqKHq4z7Gi4xiYv3QHaHa%3Fcb%3D12%26pid%3DApi%26ucfimg%3D1&f=1&ipt=651a44d90aebed7b83dca2f1a42172618df6038f70de34811738c8b37e47c734&ipo=images" alt="Seventh Game" />
+                <button>7th one</button>
+            </a>
+            <caption>Seventh Game</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index8.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.0wVFLBqKHq4z7Gi4xiYv3QHaHa%3Fcb%3D12%26pid%3DApi%26ucfimg%3D1&f=1&ipt=651a44d90aebed7b83dca2f1a42172618df6038f70de34811738c8b37e47c734&ipo=images" alt="Eighth Game" />
+                <button>8th one</button>
+            </a>
+            <caption>Eighth Game</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index9.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.0wVFLBqKHq4z7Gi4xiYv3QHaHa%3Fcb%3D12%26pid%3DApi%26ucfimg%3D1&f=1&ipt=651a44d90aebed7b83dca2f1a42172618df6038f70de34811738c8b37e47c734&ipo=images" alt="Ninth Game" />
+                <button>9th one</button>
+            </a>
+            <caption>Ninth Game</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index10.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.0wVFLBqKHq4z7Gi4xiYv3QHaHa%3Fcb%3D12%26pid%3DApi%26ucfimg%3D1&f=1&ipt=651a44d90aebed7b83dca2f1a42172618df6038f70de34811738c8b37e47c734&ipo=images" alt="Tenth Game" />
+                <button>10th one</button>
+            </a>
+            <caption>Tenth Game</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index11.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.0wVFLBqKHq4z7Gi4xiYv3QHaHa%3Fcb%3D12%26pid%3DApi%26ucfimg%3D1&f=1&ipt=651a44d90aebed7b83dca2f1a42172618df6038f70de34811738c8b37e47c734&ipo=images" alt="Eleventh Game" />
+                <button>11th one</button>
+            </a>
+            <caption>Eleventh Game</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index12.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.0wVFLBqKHq4z7Gi4xiYv3QHaHa%3Fcb%3D12%26pid%3DApi%26ucfimg%3D1&f=1&ipt=651a44d90aebed7b83dca2f1a42172618df6038f70de34811738c8b37e47c734&ipo=images" alt="Twelfth Game" />
+                <button>12th one</button>
+            </a>
+            <caption>Twelfth Game</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index13.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.0wVFLBqKHq4z7Gi4xiYv3QHaHa%3Fcb%3D12%26pid%3DApi%26ucfimg%3D1&f=1&ipt=651a44d90aebed7b83dca2f1a42172618df6038f70de34811738c8b37e47c734&ipo=images" alt="Thirteenth Game" />
+                <button>13th one</button>
+            </a>
+            <caption>Thirteenth Game</caption>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://trirha.github.io/games/index14.html">
+                <img src="https://avatars.githubusercontent.com/u/103917385?s=200&v=4" alt="Fourteenth Game" />
+                <button>14th one</button>
+            </a>
+            <caption>Interstellar<caption>
+        </div>
     </div>
 
 </body>
 </html>
+
+
