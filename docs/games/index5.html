@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Question 13/20</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent body scroll */
+        }
+        #myIframe {
+            width: 100%;
+            height: 100vh; /* Full height of the viewport */
+            border: none;
+            display: block;
+    </style>
+    <a href="https://trirha.github.io/website1" style="text-decoration: none; position: fixed; bottom: 20px; left: 20px;">
+    	<button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        	Go to Games
+    	</button>
+	</a>
+</head>
+<body>
+
+<iframe id="myIframe" src="https://noahsamazingtutoringhelp.github.io/Noahs-Calculus-Tutor/" allowfullscreen></iframe>
+
+<script>
+     // This script can be added inside the iframe's content
+        function requestFullscreen() {
+            const iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) { // Safari
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+        }
+
+        // Call this function when you want to go fullscreen, e.g. on a button click
+        document.getElementById('fullscreenButton').addEventListener('click', requestFullscreen);
+
+    iframe.onload = function() {
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        const links = iframeDocument.querySelectorAll('a');
+
+        links.forEach(link => {
+            link.setAttribute('target', 'myIframe');
+
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                iframe.src = link.href; // Change the iframe's src
+            });
+        });
+    };
+</script>
+</body>
+</html>
