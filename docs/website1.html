@@ -137,15 +137,20 @@
             <caption>Thirteenth Game</caption>
         </div>
         <div class="button-wrapper">
-            <a href="https://trirha.github.io/games/index14.html">
-                <img src="https://avatars.githubusercontent.com/u/103917385?s=200&v=4" alt="Fourteenth Game" />
-                <button>14th one</button>
-            </a>
-            <caption>Interstellar<caption>
-        </div>
-    </div>
+            <button id="fourteenth-button">14th one</button>
+                <caption>Interstellar</caption>
+</div>
 
-</body>
-</html>
-
+<script>
+    document.getElementById("fourteenth-button").addEventListener("click", function() {
+        var newTab = window.open("about:blank", "_blank");
+        if (newTab) {
+            setTimeout(function() {
+                newTab.location.href = "https://trirha.github.io/games/index14.html"; // Change this URL as needed
+            }, 100);
+        } else {
+            alert("Please allow popups for this website.");
+        }
+    });
+</script>
 
